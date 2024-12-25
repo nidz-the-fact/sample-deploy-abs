@@ -18,7 +18,7 @@ Abstract chain docs: https://docs.abs.xyz/build-on-abstract/smart-contracts/foun
 ### Install (for Windows)
 > **Linux: `wsl --install` on Powershell**
 
-## 1. Starter
+## 1. Start
 
 ### 1.1 install first time
 
@@ -38,14 +38,30 @@ forge build --help | grep -A 20 "ZKSync configuration:"
 > **Note: for Windows, you must use wsl on the terminal in vs code.** <br/>
 ![image](https://github.com/user-attachments/assets/8f09b188-681b-47ec-aea8-c0f1f4fc212d)
 
-### 2 Deploy
+## 2. Usage
 
-### 2.1 build file
+### 2.1 Clone
+
+```shell
+git clone https://github.com/nidz-the-fact/sample-deploy-abs.git
+```
+or
+```shell
+npx degit https://github.com/nidz-the-fact/sample-deploy-abs <NAME_FOLDER>
+```
+
+> **You can also download `.zip` files directly.**
+![image](https://github.com/user-attachments/assets/e2eec982-fcc4-45fd-8929-6be8f7083bc3)
+
+
+## 3 Deploy
+
+### 3.1 build file
 ```shell
 forge build --zksync
 ```
 
-### 2.2 deployed
+### 3.2 deployed
 ```shell
 forge create src/TokenName.sol:TokenName \
     --private-key <YOU_PRIVATE_KEY> \
